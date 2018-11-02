@@ -1,0 +1,21 @@
+{
+  "name": "elm-realtime-counter",
+  "version": "1.0.0",
+  "description": "Real-time variant of the counter example",
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  },
+  "author": "TAKAHASHI Yuto <ytaka23dev@gmail.com>",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y-taka-23/elm-realtime-counter.git"
+  },
+  "devDependencies": {
+    "elm-webpack-loader": "^5.0.0",
+    "file-loader": "^2.0.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
