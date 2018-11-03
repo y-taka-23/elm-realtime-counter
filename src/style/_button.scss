@@ -1,0 +1,46 @@
+.button-rim {
+    align-items: center;
+    background-color: $color-frame;
+    border-radius: 70px;
+    box-shadow:
+        0px -5px 5px $color-shade inset,
+        0px 5px 5px $color-highlight inset,
+        0px 7px 10px rgba($color-shade, 0.3);
+    cursor: pointer;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    width: 140px;
+
+    &-left {
+        position: absolute;
+        right: 170px;
+    }
+
+    &-right {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.button-face {
+    align-items: center;
+    background-color: $color-primary;
+    border-radius: 50px;
+    box-shadow:
+        0px -1px 1px $color-shade,
+        0px 1px 1px $color-highlight,
+        0px -30px 50px $color-solid inset;
+    color: $color-button-text;
+    display: flex;
+    font-size: 3.2rem;
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+}
+
+.button-face i {
+    text-shadow:
+        0px -1px 0px $color-shade,
+        0px 1px 0px $color-highlight;
+}

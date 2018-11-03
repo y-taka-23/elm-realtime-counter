@@ -14,12 +14,18 @@ module.exports = {
         rules: [
             {
                 test: /\.elm$/,
+                exclude: [/elm-stuff/, /node_modules/],
                 loader: 'elm-webpack-loader'
             },
             {
                 test: /\.html$/,
                 loader: 'file-loader?name=[name].[ext]'
+            },
+            {
+                test: /\.scss$/,
+                loader: [ 'style-loader', 'css-loader', 'sass-loader']
             }
+
         ]
     }
 };

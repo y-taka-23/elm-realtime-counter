@@ -1,0 +1,47 @@
+.frame {
+    align-items: center;
+    background-color: $color-frame;
+    border-radius: 15px;
+    box-shadow:
+        0px -2px 1px $color-shade,
+        0px 2px 1px $color-highlight;
+    display: flex;
+    height: 100px;
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    width: 550px;
+}
+
+.display {
+    align-items: center;
+    background-color: $color-segments-display;
+    border-radius: 3px;
+    box-shadow:
+        0px -1px 0px $color-shade,
+        0px 1px 0px $color-highlight;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 260px;
+}
+
+.count {
+    color: $color-segments-active;
+    font-family: monospace;
+    font-size: 4.5rem;
+    position: absolute;
+    right: 65px;
+    text-align: right;
+    text-shadow:
+        0px 0px 3px rgba($color-segments-active, 0.7),
+        0px 0px 15px rgba($color-segments-active, 0.5);
+}
+
+.pane {
+    background-color: darken($color-primary, 7%);
+    box-shadow:
+        0px 2px 1px rgba($color-highlight, 0.3) inset,
+        0px -2px 1px rgba($color-shade, 0.3) inset;
+    flex: 1;
+    height: 100%;
+}

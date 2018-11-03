@@ -1,0 +1,17 @@
+@import "reset.scss";
+@import "color.scss";
+@import "frame.scss";
+@import "button.scss";
+
+body {
+    align-items: center;
+    background-color: $color-background;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
