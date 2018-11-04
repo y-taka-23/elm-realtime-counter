@@ -35,6 +35,13 @@
     text-shadow:
         0px 0px 3px rgba($color-segments-active, 0.7),
         0px 0px 15px rgba($color-segments-active, 0.5);
+
+    &-overflow {
+        color: $color-segments-overflow;
+        text-shadow:
+            0px 0px 3px rgba($color-segments-overflow, 0.7),
+            0px 0px 15px rgba($color-segments-overflow, 0.5);
+    }
 }
 
 .pane {
