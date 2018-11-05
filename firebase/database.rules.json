@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "count": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.isNumber() && -999 <= newData.val() && newData.val() <= 999"
+    }
+  }
+}
