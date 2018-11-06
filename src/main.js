@@ -14,3 +14,9 @@ const { Elm } = require('./Main.elm');
 const app = Elm.Main.init({
     node: document.getElementById('app')
 });
+
+firebase.database().ref('count').on('value', (snap) => {
+    const count = snap.val();
+    app.ports.load.send(count);
+    console.log(`load the counter: ${count}`);
+});

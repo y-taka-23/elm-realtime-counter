@@ -10,6 +10,7 @@ module RealtimeCounter.Model exposing
 type Msg
     = Decrease
     | Increase
+    | Load Int
 
 
 type alias Model =

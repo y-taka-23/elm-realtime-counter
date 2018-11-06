@@ -19,3 +19,6 @@ update msg model =
 
             else
                 ( { model | count = model.count + 1 }, Cmd.none )
+
+        Load n ->
+            ( { model | count = n }, Cmd.none )
