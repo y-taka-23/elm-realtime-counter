@@ -20,3 +20,8 @@ firebase.database().ref('count').on('value', (snap) => {
     app.ports.load.send(count);
     console.log(`load the counter: ${count}`);
 });
+
+app.ports.store.subscribe((count) => {
+    firebase.database().ref('count').set(count);
+    console.log(`store the counter: ${count}`);
+});
