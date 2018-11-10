@@ -19,7 +19,7 @@ type alias Model =
 
 init : Model
 init =
-    { count = 42 }
+    { count = 0 }
 
 
 minCount : Int
